@@ -1,1 +1,21 @@
+class Orang:
+    def __init__(self, nama, alamat, pekerjaan):
+        self.nama = nama
+        self.alamat = alamat
+        self.pekerjaan = pekerjaan
 
+    def kenalan(self):
+        print(f"Halo, nama saya {self.nama}.")
+        print(f"Saya tinggal di {self.alamat}.")
+        print(f"Saat ini saya bekerja sebagai {self.pekerjaan}.\n")
+
+# Data Orang Pertama
+orang1 = Orang("Anggun", "Jakarta Pusat", "Software Engineer")
+
+# Data Orang Kedua
+orang2 = Orang("Amdiyah", "Bandung", "Data Analyst")
+
+# Memanggil fungsi perkenalan
+print("=== PERKENALAN ===\n")
+orang1.kenalan()
+orang2.kenalan()
